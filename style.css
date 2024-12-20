@@ -1,0 +1,104 @@
+*{
+    list-style-type: none;
+}
+    body {
+        background-color: rgb(74, 79, 82);
+        color: white;
+
+        header {
+            display: flex;
+            flex-direction: row;
+            gap: 50rem;
+            position: fixed;
+            background-color: rgb(74, 79, 82);
+            top: 0;
+            img {
+                width: 10rem;
+                height: 5rem;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 3rem;
+                padding-top: 2%;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 120%;
+                position: relative;
+            }
+            nav ul li a::after {
+                content: '';
+                width: 0;
+                height: 3px;
+                background: white;
+                position: absolute;
+                left: 0;
+                bottom: -6px;
+                transition: 0.5s;
+            }
+            nav ul li :hover::after {
+                width: 100%;
+            }
+
+        }
+
+        main {
+            section#presentation {
+                display: flex;
+                flex-direction: row;
+                img#avatar {
+                    width: 50%;
+                    height: 20%;
+                    object-fit: cover;
+                    padding-top: 10%;
+                }
+                div {
+                    padding: 10% 5%;
+
+                    h1 {
+                        font-size: 400%;
+                        padding-bottom: 8%;
+                    }
+                    h2 {
+                        font-size: 300%;
+                    }
+                    p {
+                        font-size: 200%;
+
+                        line-height: 150%;
+                        padding-top: 5%;
+                    }
+
+                }
+                
+            }
+            section#about {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding-bottom: 10%;
+                hgroup {
+                    padding-top: 10%;
+
+                    h2 {
+                        font-size: 300%;
+                    }
+                }
+
+                 div {
+                    background-color: bisque;
+                    color: black;
+                    width: 60%;
+                    padding: 5%;
+                    border-radius: 20px;
+
+                    p  {
+                        font-size: 150%;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
